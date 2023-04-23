@@ -1,0 +1,89 @@
+.select-list {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.select-list-item {
+  border: 2px inset var(--secondary);
+  background: var(--main-dark);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  color: var(--font-color);
+
+}
+
+.select-list-data {
+  padding: 5px;
+}
+
+.select-list-buttons {
+  display: flex;
+  border-top: 5px inset var(--secondary);
+}
+
+.select-list-icon {
+  width:  25px;
+  height: 25px;
+}
+.select-list-icon svg {
+  stroke : var(--font-color);
+}
+.select-list-button {
+  display: inline;
+  border: 1px solid var(--secondary);
+  background: var(--main-dark);
+  color: var(--font-color);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.select-list-button:hover {
+  background: var(--font-color);
+  color: var(--main-dark);
+  font-family: var(--font-fmaily);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.select-list-title {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}
+
+.select-list-description {
+  font-family: var(--font-fmaily);
+  color: var(--font-color);
+}
+
+.select-list .select-list-button {
+  padding: 10px;
+  color: var(--font-color);
+  display: block;
+  border: 1px inset var(--secondary);
+  background-color: var(--main-dark);
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: var(--font-family);
+}
+.select-list .select-list-button:hover {
+  cursor: pointer;
+  color: var(--main-dark);
+  background-color: var(--secondary);
+  transition: 0.5s;
+}
+.select-list .select-list-title {
+  font-size: 25px;
+  padding: 10px;
+}
+.select-list .select-list-description {
+  font-size: 14px;
+  padding: 10px;
+}

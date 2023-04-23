@@ -1,0 +1,53 @@
+.collection-data {
+  display: grid;
+  grid-template-columns: 40% 10% 50%;
+  color: var(--secondary);
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+.collection-group-title {
+  text-align: center;
+  color: var(--secondary-bright);
+}
+
+.collection-key {
+  text-align: center;
+  font-weight: bold;
+}
+.collection-name {
+  font-weight: bold;
+}
+
+.collection-group {
+  padding: 50px;
+  background-color: var(--input-background);
+  border: 2px inset var(--secondary);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 50px;
+}
+
+.vector-input {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.vector-input-group {
+  display: flex;
+  height: 50px;
+}
+.vector-input-group label {
+  width: auto !important;
+  display: block;
+  margin: auto;
+}
+.vector-input-group input {
+  width: auto !important;
+  display: block;
+  margin: auto;
+}
+
+
+.file-input {
+  display: grid;
+  grid-template-columns: auto auto;
+}

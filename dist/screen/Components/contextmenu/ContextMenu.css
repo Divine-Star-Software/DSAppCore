@@ -1,0 +1,46 @@
+.context-menu {
+  position: absolute;
+  min-width: 300px;
+  min-height: 300px;
+
+  padding: 20px;
+  color: var(--font-color);
+  display: block;
+  border: 2px inset var(--secondary);
+  background-color: var(--main-dark);
+
+  box-shadow: var(--box-shadow);
+  font-weight: bold;
+  letter-spacing: 5px;
+  font-family: var(--font-family);
+  z-index: 100000000000000000;
+}
+
+.context-menu-button {
+  width: 100%;
+
+  text-align: center;
+
+  color: var(--font-color);
+  display: block;
+  border-bottom: 6px inset var(--secondary);
+  background-color: rgba(0, 0, 0, 0);
+  transition: 0.25s;
+  box-shadow: var(--box-shadow);
+
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+
+  padding: 25px;
+  font-family: var(--font-family);
+}
+.context-menu-button:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 0, 1);
+  background-color: var(--secondary);
+  transition: 0.25s;
+}

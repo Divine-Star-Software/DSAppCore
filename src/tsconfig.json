@@ -1,0 +1,49 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "rootDir": "./",
+    "rootDirs": [],
+    "types": [
+      "crystalline-state",
+      "elmtree",
+      "divine-binary-object",
+      "crystal-compressor",
+      "@babylonjs/core"
+    ],
+    "declaration": false,
+    "emitDecoratorMetadata": false,
+    "outDir": "../dist/",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": "./",
+    "paths": {
+      "@screen/*": ["./screen/*"],
+      "@system/*": ["./system/*"],
+
+      "@commands/*": ["./commands/*"],
+
+      "@assets/*": ["./assets/*"],
+      "@databases/*": ["./databases/*"],
+      "@Components/*": ["./screen/Components/*"],
+
+      "@sharedData/*": ["./data/shared/*"],
+      "@clientData/*": ["./data/client/*"],
+      "@state/*": ["./client/State/*"],
+
+      "@util/*": ["./util/*"],
+      "@controls/*": ["./controls/*"],
+      "@meta/*": ["./types/*"],
+
+      "@updates/*": ["aspects/updates/*"],
+      "@schema/*": ["./Schemas/*"],
+      "@entities/*": ["./Entities/*"],
+      "@settings/*": ["./settings/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }],
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node"
+  }
+}

@@ -1,0 +1,257 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  font-family: "retro";
+  letter-spacing: 5px;
+  font-weight: 500;
+  font-stretch: expanded;
+  background-color: black;
+  --background: rgba(14, 14, 14, 0.7);
+  --main: rgba(13, 52, 68, 0.7);
+  --main-dark: rgba(6, 21, 29, 0.8);
+  --label-background: #0e0d0db3;
+  --input-background: #080808b3;
+  --secondary: #b0efff;
+  --secondary-dark: #0f0f0f;
+  --secondary-bright: #ecfbff;
+  --outline: #08cf12;
+  --font-color: var(--secondary);
+  letter-spacing: 5px;
+  line-height: 1.5;
+  --font-color-dark: #929090;
+  --font-fmaily: "retro";
+  --box-shadow: 0 14px 16px rgba(0, 0, 0, 0.3);
+}
+
+#APP {
+  z-index: 10000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.button-group {
+  display: flex;
+}
+
+.game-screen {
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.menu-screen {
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+}
+.game-menu {
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menu-screens {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+body.arial div:focus,
+body.arial button:focus,
+body.arial p:focus {
+  outline-style: dotted;
+  outline-color: var(--outline);
+  outline-width: 4px;
+}
+
+button:focus {
+  outline: none;
+}
+
+h1.screen-title {
+  text-align: left;
+  margin-left: 10px;
+  margin-top: 0;
+  padding: 0;
+
+  font-size: 3vw;
+  color: var(--font-color);
+}
+
+.menu-screen.active {
+  display: grid;
+}
+.menu-screen.inactive {
+  display: none;
+}
+
+.screens {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: var(--background);
+}
+.screen-fade {
+  width: 100%;
+  height: 100%;
+}
+
+.screen {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.screen.inactive {
+  display: none;
+}
+
+.screen.active {
+  display: block;
+  animation: fadein 0.5s linear;
+}
+
+.subscreen {
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.screen-switch-screen {
+  height: 100%;
+  width: 100%;
+}
+
+.subscreen.inactive,
+.screen-switch-screen.inactive {
+  display: none;
+}
+
+.subscreen.active,
+.screen-switch-screen.active {
+  display: block;
+  animation: fadein 0.5s linear;
+}
+
+.default-button {
+  padding: 20px;
+  color: var(--font-color);
+  display: block;
+  border: 2px inset var(--secondary);
+  background-color: var(--main-dark);
+  transition: 0.5s;
+  box-shadow: var(--box-shadow);
+  min-width: 200px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-left: 15px;
+  margin-right: 15px;
+  font-family: var(--font-family);
+  margin-bottom: 20px;
+}
+.default-button:hover {
+  cursor: pointer;
+  color: var(--main-dark);
+  background-color: var(--secondary);
+  transition: 0.5s;
+}
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background-color: var(--main-dark);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--main);
+  border: 1px solid var(--main-dark);
+}
+.intro-in {
+  animation: intro-fade-in 2s linear;
+}
+.intro-out {
+  animation: intro-fade-out 2s linear;
+}
+
+.screen-in {
+  animation: intro-fade-in 0.25s linear;
+}
+.screen-out {
+  animation: intro-fade-out 0.25s linear;
+}
+@keyframes intro-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes intro-fade-out {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate3d(0, -1, 0, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, -1, 0, 360deg);
+  }
+}
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px var(--secondary-bright),
+      0 0 20px var(--secondary-bright), 0 0 30px var(--secondary-dark),
+      0 0 40px var(--secondary-dark), 0 0 50px var(--secondary-dark),
+      0 0 60px var(--secondary-dark), 0 0 70px var(--secondary-dark);
+  }
+  to {
+    text-shadow: 0 0 20px var(--secondary-bright), 0 0 30px var(--secondary),
+      0 0 40px var(--secondary), 0 0 50px var(--secondary),
+      0 0 60px var(--secondary), 0 0 70px var(--secondary),
+      0 0 80px var(--secondary);
+  }
+}

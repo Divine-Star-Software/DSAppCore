@@ -1,0 +1,30 @@
+{
+  "name": "ds-app-core-dev",
+  "version": "0.0.0",
+  "description": "",
+  "main": "./index.js",
+  "typings": "./index.ts",
+  "type": "module",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "url": "https://github.com/Divine-Star-Software/DSAppCore"
+  },
+  "homepage": "https://github.com/Divine-Star-Software/DSAppCore",
+  "author": "Divine Star Software",
+  "license": "MIT",
+  "devDependencies": {
+    "ttypescript": "1.5.15",
+    "typescript-transform-paths": "3.4.6"
+  },
+  "dependencies": {
+    "@babylonjs/core": "^6.0.0",
+    "crystal-compressor": "^0.0.4",
+    "crystalline-state": "^0.0.45",
+    "divine-binary-object": "^0.1.1",
+    "elmtree": "^0.0.27",
+    "zeneithdb": "^0.0.22"
+  }
+}

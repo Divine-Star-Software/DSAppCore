@@ -1,0 +1,25 @@
+{
+  "sources": [
+    {
+      "dir": "D:/DSSoftware/DSLIBS/dsAppCore/src",
+      "fileExtensions": [
+        "css"
+      ],
+      "id": "css"
+    }
+  ],
+  "outputs": [
+    {
+      "dir": "D:/DSSoftware/DSLIBS/dsAppCore/dist",
+      "sourceID": "css",
+      "codeSection": "all",
+      "keepComments": true
+    }
+  ],
+  "codeSections": {
+    "all": {
+      "start": "@ds",
+      "end": "@ds"
+    }
+  }
+}

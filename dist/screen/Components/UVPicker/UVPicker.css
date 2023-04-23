@@ -1,0 +1,47 @@
+.layer-canvas {
+  display: block;
+  margin: auto;
+}
+
+.uv-picker-palette {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+}
+
+.uv-picker-node {
+  border: 2px inset var(--secondary);
+  background: var(--secondary-dark);
+  box-shadow: var(--box-shadow);
+  margin: auto;
+  color: var(--font-color);
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
+}
+
+.uv-picker-node.active {
+  background: var(--secondary-bright);
+  color: var(--secondary-dark);
+  transition: 0.5s;
+}
+
+.uv-picker-node:hover {
+  background: var(--secondary-bright);
+  color: var(--secondary-dark);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.uv-picker-node-name {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.uv-picker-node-color {
+  display: block;
+  margin: auto;
+  padding-bottom: 5px;
+  border : 2px solid black;
+}
