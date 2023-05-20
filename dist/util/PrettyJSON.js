@@ -1,5 +1,5 @@
 const stringOrChar = /("(?:[^\\"]|\\.)*")|[:,]/g;
-export default function stringify(passedObj, options = {}) {
+export const prettyJSON = (passedObj, options = {}) => {
     const indent = JSON.stringify([1], undefined, options.indent === undefined ? 2 : options.indent).slice(2, -3);
     const maxLength = indent === ""
         ? Infinity
@@ -64,4 +64,4 @@ export default function stringify(passedObj, options = {}) {
         }
         return string;
     })(passedObj, "", 0);
-}
+};

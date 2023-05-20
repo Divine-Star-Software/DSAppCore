@@ -26,7 +26,7 @@
     {
       "label": "src-compile",
       "type": "shell",
-      "command": "cd src; ttsc --watch",
+      "command": "cd src; tsc --watch",
       "isBackground": true
     },
     {
